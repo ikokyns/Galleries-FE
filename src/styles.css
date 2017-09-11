@@ -76,6 +76,13 @@ h6, .h6 {
   border-left: .3rem solid transparent;
 }
 
+.nav-p {
+  position: relative;
+  padding: 1rem;
+  font-weight: 500;
+  color: #000000;
+}
+
 
 /*
  * Blog name and description
