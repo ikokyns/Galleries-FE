@@ -7,19 +7,19 @@
 			<a class="nav-link" routerLink="/">All Galleries</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" routerLink="/my-galleries">My Galleries</a>
+			<a class="nav-link" routerLink="/my-galleries" *ngIf="auth.isAuthenticated">My Galleries</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" routerLink="/create">Create New Gallery</a>
+			<a class="nav-link" routerLink="/create" *ngIf="auth.isAuthenticated">Create New Gallery</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" routerLink="/login">Login</a>
+			<a class="nav-link" routerLink="/login" *ngIf="!auth.isAuthenticated">Login</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" routerLink="/register">Register</a>
+			<a class="nav-link" routerLink="/register" *ngIf="!auth.isAuthenticated">Register</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" routerLink="/logout">Logout</a>
+			<a class="nav-link" routerLink="/logout" *ngIf="auth.isAuthenticated">Logout</a>
 		</li>
 		<li class="nav-item">
 	</ul>
