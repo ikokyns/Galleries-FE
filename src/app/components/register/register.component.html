@@ -1,5 +1,5 @@
 <h1>Register</h1>
-<form #userForm="ngForm" (ngSubmit)="submitUser(newUser)">
+<form #userForm="ngForm" (ngSubmit)="register(newUser.firstName, newUser.lastName, newUser.email, newUser.password)">
 	<div class="form-group" >
 		<label>First name</label>
 		<input #firstName="ngModel" [(ngModel)]="newUser.firstName" type="text" name="firstName" class="form-control" required>

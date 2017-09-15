@@ -10,6 +10,10 @@ import { RegisterComponent } from './components/register/register.component';
 import { NavbarComponent } from './components/layout/navbar.component';
 import { MainComponent } from './components/layout/main/main.component';
 import { SharedModule } from './shared/shared.module';
+import { MyGalleriesComponent } from './components/layout/my-galleries/my-galleries.component';
+import { CreateGalleriesComponent } from './components/layout/create-galleries/create-galleries.component';
+import { LogoutComponent } from './components/logout/logout.component';
+import { AllGalleriesComponent } from './components/layout/all-galleries/all-galleries.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { SharedModule } from './shared/shared.module';
     LoginComponent,
     RegisterComponent,
     NavbarComponent,
-    MainComponent
+    MainComponent,
+    MyGalleriesComponent,
+    CreateGalleriesComponent,
+    LogoutComponent,
+    AllGalleriesComponent
   ],
   imports: [
     BrowserModule,

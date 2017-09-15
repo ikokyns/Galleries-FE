@@ -1,0 +1,20 @@
+<div class="container" *ngFor="let gallerie of galleries">
+  <div class="container d-flex flex-row">
+    <img class="rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEYTdxbBBiVFI9BpizlaggEoTPC_PtjrwoDmJO4gBc3PynuogKwJ1r8dI" style="width: 10rem; height: 10rem;">
+
+    <div class="d-flex flex-column">
+      <div class="p-2">
+        <ul class="list-group">
+          <li class="list-group-item">Title of gallerie: 
+            <a href="#"> {{ gallerie.name }}</a>
+          </li>
+          <li class="list-group-item">Author:
+            <a href="#"> {{ gallerie.users.first_name }}</a>
+          </li>
+          <li class="list-group-item">Date of creation:</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
